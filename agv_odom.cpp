@@ -37,7 +37,6 @@ struct EncoderData {
 };
 
 // 가상의 엔코더 데이터 콜백 함수 (실제 MD100 드라이버 노드에서 이 데이터를 발행한다고 가정)
-// 실제 구현에서는 MD100 드라이버와 시리얼 통신하여 엔코더 값을 읽어오는 로직이 필요합니다.
 void encoderDataCallback(const EncoderData& msg) {
     // ROS_INFO("Received Encoder Data: L=%ld, R=%ld", msg.left_encoder_value, msg.right_encoder_value);
 
